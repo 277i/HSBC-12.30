@@ -1,0 +1,350 @@
+/*页面总宽度*/
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+    margin: 0 auto;
+    background: url(../images/bj.png) no-repeat top center/100% 100%;
+
+}
+
+/*主体内容宽度*/
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*头部区域*/
+.header {
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.top .inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top .logo {
+    float: left;
+    cursor: pointer;
+}
+
+.top .logo img {
+    width: 50%;
+}
+
+.top .nav1 {
+    float: right;
+}
+
+.top .nav1 li {
+    float: left;
+}
+
+.top .nav1 li a {
+    display: block;
+    padding: 0 16px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #999;
+    transition: all .3s;
+}
+
+.top .nav1 li a.on,
+.top .nav1 li a:hover {
+    background: #888;
+}
+
+/*banner*/
+.banner img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*main*/
+.main {
+    /* margin-top: 40px; */
+}
+
+/*title*/
+.title {}
+
+.title h1 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/*contain*/
+.container {
+    margin-top: 24px;
+}
+
+.dsn {
+    display: none;
+}
+
+.pjz {
+    text-align: center;
+}
+
+/*content*/
+.content {
+    width: 1200px;
+    min-height: 500px;
+    font-size: 24px;
+}
+
+.block {
+    height: 300px;
+    background: #f47937;
+    margin-bottom: 20px;
+}
+
+
+/*版权*/
+.copyright {
+    margin: 0px auto 0;
+    width: 100%;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    color: #fff;
+	font-size: 18px;
+    background: #e20413;
+}
+
+.copyright img {
+    vertical-align: text-bottom;
+}
+
+/*回到顶部*/
+#goToTop {
+    position: fixed;
+    right: 20px;
+    z-index: 9000;
+    bottom: 30px;
+}
+
+#goToTop a {
+    background: none repeat scroll 0 0 #ddd;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    -webkit-border-radius: 50px;
+    color: #FF9966;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #999;
+    -webkit-text-shadow: 0 1px 0 #999;
+}
+
+#goToTop a {
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#goToTop a:hover {
+    background: none repeat scroll 0 0 #999;
+}
+
+/*地图*/
+.map {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.map .map-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/*网页分享*/
+.bdsharebuttonbox {
+    position: fixed;
+    left: 10px;
+    bottom: 15px;
+}
+
+.title1 {
+    margin-top: 88px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+/* 内容 */
+.title1 .t1 {
+    text-align: center;
+    font-size: 44px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    color: #e20413;
+    /* display: inline-block; */
+}
+
+.title1 .t2 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #000000;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: solid 3px #e20413;
+    display: inline-block;
+}
+
+.t2::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 43px;
+    height: 24px;
+    transform: translateX(-50%);
+    background-image: url('../images/sjj.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btimg {
+    display: block;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #333333;
+    text-indent: 2em;
+    padding: 30px;
+}
+
+.objbox {
+    background-color: #eff0f1;
+    padding: 40px 60px;
+    margin-bottom: 30px;
+}
+
+.threebox {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.threebox div,
+.four {
+    position: relative;
+    padding-left: 30px;
+}
+
+.threebox div::after,
+.four::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 14px;
+    background-color: #e20413;
+    left: 0%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.lcbox {}
+
+.lc {
+    height: 113px;
+    background-color: #eff0f1;
+    display: flex;
+    align-items: center;
+    margin: 30px 0 56px 56px;
+    box-sizing: border-box;
+}
+
+.lc-img img {
+    margin-left: -50%;
+    width: 112px;
+    height: 113px;
+    display: block;
+}
+
+.lc-top div {
+    background-color: #e20413;
+    border-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: normal;
+}
+
+.lc-top {
+    margin-bottom: 18px;
+    color: #e20413;
+    font-weight: bold;
+}
+
+.lc-bottom {
+    padding-left: 15px;
+}
+
+.lc-cont {
+    margin-left: -26px;
+}
+.jlbox{
+    margin: 30px 0;
+}
+.jl{
+    display: flex;
+    align-items: center;
+ 
+    margin-bottom: 10px;
+}
+.jl img{
+    width: 72px;
+	height: 47px;
+    /* position: relative; */
+    z-index: 999;
+}
+.jl-cont{
+    background-color: #eff0f1;
+    padding: 20px 60px;
+    margin-left: -32px;
+    width: 100%;
+}
+
+.email{
+    width: 100%;
+	height: 64px;
+    line-height: 64px;
+	background-color: #e20413;
+	border-radius: 32px;
+    text-align: left;
+    padding-left:100px;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 205px;
+}
